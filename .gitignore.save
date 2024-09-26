@@ -1,6 +1,0 @@
-# Ignore everything
-*
-
-# Don't ignore .ino files
-!*.ino
-
