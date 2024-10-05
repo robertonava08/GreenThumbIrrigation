@@ -20,7 +20,8 @@ void loop() {
    Serial.print("Soil Moisture Level: ");
 
    // Calls the readSensor() function and prints the returned magnitude value 
-   Serial.println(readSensor());
+   int soil_mouisture = readSensor();
+   Serial.println(soil_mouisture);
    Serial.print("%");
 
    // delays it .5 seconds will probably change later when full circuit is functioning
@@ -46,8 +47,8 @@ int readSensor() {
 void relay(){
 
   digitalWrite(relay_pin, LOW);
-  delay(1000);
+  delay(300);
   digitalWrite(relay_pin, HIGH);
-  delay(1000);
+  delay(300);
 
 }
