@@ -3,6 +3,17 @@ Smart Irrigation System Using an ESP8266 for Automated Plant Watering
 
 
 
+**Notes**
+
+  •The "display" object is created by the "Adafruit_SSD1306" library
+    this library is the one that is primarily in charge of what is 
+    displayed on the OLED screen since you can use the methods
+    begin(), clearDisplay(), setTextSize(), setCursor(), print() and display().
+
+
+
+
+
 
 **PROGRESS** (Contains sub-categories for ISSUES, FIXES and FUTURE TASKS)
 
@@ -21,6 +32,7 @@ Smart Irrigation System Using an ESP8266 for Automated Plant Watering
 
           • 10/26/24 I would not really call this an issue however, I need to order an OLED display on Amazon so I can properly display the SML and battery life
           • 10/26/24 Other than the OLED screen the system itself and the code is pretty much done all I need now is to learn KiCad to create the PCB design
+          • 11/02/24 Would like to create a little animation of a plant when the OLED screen boots up to make it more user friendly and interactive
 
 
 
@@ -32,6 +44,8 @@ Smart Irrigation System Using an ESP8266 for Automated Plant Watering
           • 10/12/24 Printed the raw values that the analog pin is reading and used that to calibrate the SMS (299-707)
           • 10/12/24 The values still go a little over and under 0 and 100 but it is so small that it is negligible to consider
           • 10/12/24 Wrote the code so that the water pump only turns on when the SML reaches at or below 35 (will test on real soil sample next time)
+          • 11/02/24 Ordered the OLED screen and connected it to my system
+          • 11/02/24 Properly displayed the SML on the OLED screen
 
 
     
