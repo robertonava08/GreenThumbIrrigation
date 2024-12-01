@@ -70,7 +70,7 @@ void loop() {
      display.display();
 
    // delays it .5 seconds will probably change later when full circuit is functioning
-   delay(500);
+   delay(1000);
 
 
    // If statement to call relay module if the SML reaches a certain level (we will use 35 for prototyping)
@@ -106,7 +106,7 @@ int readSensor() {
 void relay(){
 
   digitalWrite(relay_pin, LOW);    // Turn on the relay (close the circuit to the pump
-  delay(5000);                    // Wait for 5 seconds (the pump runs)
+  delay(1000);                    // Wait for 5 seconds (the pump runs)
   digitalWrite(relay_pin, HIGH);  // Turn off the relay (open the circuit to the pump)
   
 

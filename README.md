@@ -12,8 +12,40 @@ Smart Irrigation System Using an ESP8266 for Automated Plant Watering
 
 
 
+**Wiring Setup**
+
+  **Relay**
+    •VCC --> 3V of ESP8266
+    •GND --> G of ESP8266
+    •IN --> D2 of ESP8366
+    •COM --> +OUT of buck converter
+    •NO --> +terminal of water pump
+
+  **Soil Moisture Sensor**
+    •GND --> -OUT of buck converter
+    •VCC --> +OUT of buck converter
+    •AUOT --> A0 of ESP8266
+
+  **OLED DISPLAY**
+    •GND --> -OUT of buck converter
+    •VCC --> +OUT of buck converter
+    •SCL --> D1 of ESP8266
+    •SDA --> D3 of ESP8266
+
+  **ESP8266**
+    •VIN --> +OUT of buck converter
+    •G --> -OUT of the buck converter
 
 
+  **Water Pump** 
+    •Positive terminal --> NO of relay
+    •Negative terminal --> -OUT of buck converter
+
+  **9V Battery**
+  •Positive terminal --> +IN of buck converter
+  •Negative terminal --> -IN of buck converter 
+
+  
 
 **PROGRESS** (Contains sub-categories for ISSUES, FIXES and FUTURE TASKS)
 
@@ -46,6 +78,7 @@ Smart Irrigation System Using an ESP8266 for Automated Plant Watering
           • 10/12/24 Wrote the code so that the water pump only turns on when the SML reaches at or below 35 (will test on real soil sample next time)
           • 11/02/24 Ordered the OLED screen and connected it to my system
           • 11/02/24 Properly displayed the SML on the OLED screen
+
 
 
     
