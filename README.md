@@ -81,6 +81,13 @@ Smart Irrigation System Using an ESP8266 for Automated Plant Watering
 
 
 
+
+**RESULTS** 
+  
+  * The device is a success. It correctly monitors the moisture level of the soil surrounding the plant, in this case a serrano plan, maintaining a damp environment for proper growth.
+  * A future endevour could consist of creating an application with Flutter, for a more user friendly approach. 
+
+
     
 
 
